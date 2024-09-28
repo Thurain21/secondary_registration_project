@@ -1,0 +1,20 @@
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.user_name,.user_email,.user_region{
+    width: 200px;
+    height: 25px;
+    margin: 8px 0px;
+    border-radius: 3px;
+}
+.user_btn{
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+}
+.user_btn:hover{
+    background-color: gray;
+}
