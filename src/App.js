@@ -1,11 +1,15 @@
 
 import './App.css';
-import UseRef_Form from './components/UseRef_Form';
+import ThemeContext from './context/ThemeContext';
+import Child from './components/Child';
 
 function App() {
+  const data = "This is message from Root!";
   return (
     <div className="App">
-      <UseRef_Form/>
+      <ThemeContext.Provider value = {data}>
+        <Child/>
+      </ThemeContext.Provider>
     </div>
   );
 }
