@@ -1,17 +1,20 @@
-
-import './App.css';
-import ThemeContext from './context/ThemeContext';
-import Child from './components/Child';
-
+// eslint-disable-next-line
+import "./App.css";
+import UseRef_Form from "./components/UseRef_Form";
+import UseState_Form from "./components/UseState_Form";
 function App() {
-  const data = "This is message from Root!";
   return (
-    <div className="App">
-      <ThemeContext.Provider value = {data}>
-        <Child/>
-      </ThemeContext.Provider>
-    </div>
+    <>
+      <div className="App">
+        
+        {/* eslint-disable-next-line react/jsx-pascal-case */}
+        <UseState_Form />
+      </div>
+      <div>
+        {/* eslint-disable-next-line react/jsx-pascal-case */}
+        <UseRef_Form />
+      </div>
+    </>
   );
 }
-
 export default App;
