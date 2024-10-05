@@ -5,14 +5,14 @@ function SampleAPI() {
 
   const fetchData = async () => {
     const data = await fetch("https://fakestoreapi.com/products")
-      .then((res) => res.json())
-      .catch((error) => console.log(error.message));
+    .then((res) => res.json())
+    .catch((error) => console.log(error.message));
     setProducts(data);
     console.log(products);
   };
   useEffect(() => {
     fetchData();
-  }, []);
+  },[]);
   return (
     <div>
       <h1>All Products</h1>
