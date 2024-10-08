@@ -6,7 +6,7 @@ function Child() {
     const rootData = useContext(ThemeContext);
   return (
     <div>
-        <h1>Child</h1>
+        <h1>Child Component</h1>
         <h2>{rootData}</h2>
     </div>
   )
