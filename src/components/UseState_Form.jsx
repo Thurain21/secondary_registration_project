@@ -23,7 +23,7 @@ function UseState_Form() {
     <div className="container">
         
         <form>
-            <div><h1>Form using useState</h1>
+            <div><h1>Form using useState hook</h1>
                 <input type="text"  className="user_name" placeholder='Enter your name' onChange={(e)=>setName(e.target.value)}/>
             </div>
             <div>
